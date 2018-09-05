@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Added link to the jQuery Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta charset="utf-8" />
+
+<title>Crystal Game</title>
+<!-- Added a link to css, bootstrap, and Reset.css-->    
+<link rel="stylesheet" href="assets/css/reset.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+<!--Header-->    
+<h1 id="header">CrystalsCollector!</h1>
+<!--Instructions-->
+    <div id="section">
+        You will be given a random number at the start of the game. 
+        <br>
+        <br>
+        There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+        <br>
+        <br>
+        You win the game by matching your total score to random number, you ose the game if your total score goes above the random number.
+        <br>
+        <br>
+        The value of each crystal is hidden from you until you click on it.
+        <br>
+        <br>
+        Each time when the  game starts, the game will change the values of each crystal.
+    </div>   
+<!--Random Number-->
+<div id="randomnumber">Chosen Number</div>
+<!--Wins and Losses-->
+<div class="winsandlosses">
+    <div id="wins">Wins</div>
+    <div id="losses">Losses</div>
+</div>
+</div>
+<!--Buttons-->
+<div id="buttons">
+</div>
+
+<!--Scoring-->
+<div class="score">
+    <h5 id="scoreheader">Your Total Score is:</h5>
+    <div id="score">Score</div>
+</div>
+<script type="text/javaScript" src="assets/javaScript/game.js"></script>
+</body>
+</html>
