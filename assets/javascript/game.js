@@ -30,22 +30,22 @@ for (var i = 0; i < numberOptions.length; i++) {
 
 }
 //Button Functions//
-$(".crystal-image").on("click", function() {
+$(".buttons").on("click", function() {
 
-var crystalvalue = ($(this).attr("data-crystalvalue"));
-crystalvalue = parseInt(crystalvalue);
+var buttonvalue = ($(this).attr("data-crystalvalue"));
+buttonvalue = parseInt(buttonvalue);
 
-score += crystalvalue;
+score += buttonvalue;
+$("#score").text(buttonvalue);
 console.log(score);
     
  if (score === random) {
      wins++
-     $("#score").text(score);
-     $("#wins").text(wins);
+     $('#wins').text(wins);
     }
 
     else if (score >= random) {
     losses++
-    $("#losses").text(losses);
+    $('#losses').text(losses);
     }
 });
